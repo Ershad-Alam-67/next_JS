@@ -1,7 +1,7 @@
 import React from "react"
 
 const Aboutus = () => {
-  return <div>this is about page</div>
+  return <div>My name is Ershad Alam</div>
 }
 
 export default Aboutus
