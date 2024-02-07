@@ -1,6 +1,7 @@
 import React from "react"
 import { teamDetails } from "../../public/data"
 import { useRouter } from "next/router"
+import classes from "../aboutus/index.module.css"
 const Aboutus = () => {
   const router = useRouter()
   const { devId } = router.query
@@ -8,7 +9,7 @@ const Aboutus = () => {
   const member = teamDetails.find((member) => member.id === devId)
 
   return (
-    <div>
+    <div className={classes.container2}>
       {member ? (
         <div>
           <h1>{member.name}</h1>
